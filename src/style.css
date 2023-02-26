@@ -1,25 +1,48 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  color: #fca5a5;
+  background-color: #7f1d1d;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.title {
   text-align: center;
+}
+
+section.one {
+  height: 3700px;
+  overflow-x: hidden;
+}
+
+.camera_image {
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 1;
+}
+
+.camera_text {
+  font-size: 5rem;
+}
+
+.text_main {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+  white-space: nowrap;
+}
+
+.text_stroke {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  z-index: 3;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 2px #fecaca;
 }
